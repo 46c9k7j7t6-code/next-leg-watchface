@@ -1,65 +1,53 @@
 # Next Leg Design Specification
 
 ## Target Device
+Pebble Time 2 (Emery), 200x228 display.
 
-Pebble Time 2 (Emery)
+## Version 1.0 Design
 
----
+### Theme
+- Dark mode
+- Black background
+- White primary text
+- Blue divider lines and labels
+- Green = On Time
+- Yellow = Delayed
+- Red = Cancelled
 
-## Layout
+## Screen Layout
 
 ### Top Row
-
-- Local Time
-- UTC Hour
-- Optional Bluetooth Icon
-- Optional Battery Icon
-
----
+- Local time, large, left aligned
+- UTC hour, right side
+- Optional Bluetooth icon
+- Optional Battery icon
 
 ### Flight Section
-
-- Flight Number
-- Route
-
----
+- Large flight number
+- Route underneath
+- No airline logo in public v1.0
 
 ### Bottom Row
+Three columns:
 
 - Gate
-- Departure
+- DEP
 - Status
 
----
+Example:
 
-## Status Colours
+GATE | DEP | STAT  
+A21 | 10:15 | ON TIME
 
-Green = On Time
+## Version 1.0 Scope
+- Static watchface first
+- No FlightAware yet
+- No AI schedule import yet
+- No airline logos in public release
 
-Yellow = Delayed
-
-Red = Cancelled
-
----
-
-## Settings
-
-- Show Bluetooth
-- Show Battery
-- Show Airline Logo (Future)
-- Flight Time Format (Future)
-- Theme (Future)
-
----
-
-## Version 1 Scope
-
-Static watchface
-
-No FlightAware
-
-No schedule import
-
-No AI
-
-Focus on creating a polished layout.
+## Version 1.1 Roadmap
+- FlightAware integration
+- Show/hide Bluetooth
+- Show/hide Battery
+- Gate/status vibration alerts
+- Optional user-supplied airline logos
